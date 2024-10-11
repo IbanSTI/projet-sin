@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Cabin", sans-serif;
+    background-color: #d3e6ff;
+}
+header nav .nav-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+header nav .nav-container .nav-link{
+    display: flex;
+    justify-content: space-around;
+}
+header nav img{
+    height: 50px;
+    width: 50px;
+}
+header nav .nav-container .nav-title{
+    display: flex;
+    justify-content: center;
+}
+header nav .nav-container .nav-title .title{
+    margin-top: 5px;
+    font-size: 35px;
+}
