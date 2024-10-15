@@ -1,3 +1,5 @@
+/* Tout le body */
+
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 *{
     margin: 0;
@@ -5,8 +7,12 @@
     text-decoration: none;
     list-style: none;
     font-family: "Cabin", sans-serif;
-    background-color: #d3e6ff;
+    background-color: #1f1f1f;
 }
+
+
+/* Partie MAIN */
+
 header nav .nav-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,6 +25,7 @@ header nav .nav-container .nav-link{
 header nav img{
     height: 50px;
     width: 50px;
+    transition: transform 0.4s;
 }
 header nav .nav-container .nav-title{
     display: flex;
@@ -28,4 +35,67 @@ header nav .nav-container .nav-title .title{
     margin-top: 5px;
     font-size: 35px;
     color: white;
+}
+header nav img:hover{
+    transform: scale(1.2);
+}
+
+
+/* Les sépartations */
+
+.separation{
+    width: 80%;
+    margin: 50px 10%;
+    border: 3px solid rgb(0, 204, 255);
+    border-image: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    border-image-slice: 1;
+}
+
+
+/* Partie MAIN */
+
+main .main-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+main img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: #ffffffc9;
+    border: 6px solid rgb(0, 204, 255);
+    border-image: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8);
+    border-image-slice: 1;
+}
+
+
+/* Partie footer */
+
+footer .footer-container .footer-reseaux .title{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+footer .footer-container .footer-reseaux .separation-footer{
+    width: 30%;
+    margin: 10px 35%;
+    border: 1.5px solid rgb(0, 204, 255);
+    border-image: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    border-image-slice: 1;
+}
+footer .footer-container .footer-reseaux .reseaux-img{
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    height: 25px;
+    width: 25px;
+    margin: 10px 20px;
+}
+footer .footer-container .footer-cg{
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
