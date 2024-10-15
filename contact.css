@@ -1,20 +1,27 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: bisque;
+    background-color: #1f1f1f;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
+    
 }
 form{
-    background-color: white;
+    background-color: #ffffffc9;
     padding: 30px;
-    border-radius: 10px;
+    border: 6px solid aqua;
+    border-image: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8);
+    border-image-slice: 1;
+    width: 500px;
+    
+
 }
 form h1{
     font-size: 25px;
+    
 }
 form .separation{
     width: 100%;
@@ -27,14 +34,45 @@ form .corps-formulaire{
     margin-bottom: 30px;
 }
 img{
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
+    padding-top: 46px;
+    padding-right: 10px;
+    left: 0;
+    top: 25px;
 }
-form .corps-formulaire .groupe{
+.groupe{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 input{
     margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #c9c9c9;
+    outline-color: #1f1f1f;
+    border-radius: 5px;
 }
+form .pied-formulaire{
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+.icon{
+    display: flex;
+    flex-direction: row-reverse;
+}
+textarea{
+    outline-color: #1f1f1f;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    margin-top: 5px;   
+    resize: none;
+    height: 161px;
+    width: 250px;
+
+}
+.droite{
+    margin-left: 25px;
+}
+
